@@ -141,6 +141,10 @@ form h3{font-size:1.45rem;font-weight:900;margin-bottom:1.2rem}
 .fld label{font-weight:700;font-size:.9rem}
 .fld input,.fld select,.fld textarea{font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:.8rem .95rem;width:100%;transition:border-color .2s,box-shadow .2s}
 .fld textarea{min-height:104px;resize:vertical}
+.fld,.f2>*{min-width:0}
+.fld input[type=date]{display:block;min-width:0;max-width:100%;width:100%;-webkit-appearance:none;appearance:none;min-height:3.05rem;text-align:right}
+.fld input[type=date]::-webkit-date-and-time-value{text-align:right;min-width:0}
+.fld input[type=date]::-webkit-calendar-picker-indicator{margin:0}
 .fld input:focus,.fld select:focus,.fld textarea:focus{outline:0;border-color:var(--red);box-shadow:0 0 0 4px rgba(211,25,31,.14)}
 .fld .err{color:var(--red);font-size:.82rem;display:none}
 .fld.bad input,.fld.bad select{border-color:var(--red)}
