@@ -2,7 +2,7 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>מדהים סאם | עמדת אוכל אסייתי לאירועים</title>
 <meta name="description" content="גיוזה, דמפלינג, באו וטמאקי טריים – עמדת אוכל אסייתי חיה לאירועי חברה, הפי אווריז, ימי הולדת וכנסים. השאירו פרטים וקבלו הצעת מחיר.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@ body{font-family:'Heebo',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;bac
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .wrap{width:min(1160px,92%);margin-inline:auto}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font:inherit;font-weight:700;border:0;cursor:pointer;border-radius:999px;padding:.85rem 1.7rem;transition:transform .15s,background .2s,box-shadow .2s;font-size:1.02rem}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font:inherit;font-weight:700;border:0;cursor:pointer;border-radius:999px;padding:.85rem 1.7rem;transition:transform .15s,background .2s,box-shadow .2s;font-size:1.02rem}
 .btn:hover{transform:translateY(-2px)}
 .btn-red{background:var(--red);color:#fff;box-shadow:0 8px 22px -8px rgba(211,25,31,.65)}
 .btn-red:hover{background:var(--red-dark)}
@@ -183,8 +183,16 @@ footer small{font-size:.9rem}
   .f2{grid-template-columns:1fr}
   .ev-grid{grid-template-columns:1fr}
   nav .hide-m{display:none}
-  .fab{bottom:76px}
-  .mbar{display:flex;position:fixed;inset:auto 0 0 0;z-index:55;background:var(--paper);padding:.6rem .8rem;gap:.6rem;box-shadow:0 -6px 20px rgba(0,0,0,.12)}
+  .fab,.scroll-hint{display:none}
+  nav .btn-red{display:none}
+  .hero .wrap{padding:92px 0 112px}
+  .hero .cta{display:grid;grid-template-columns:1fr 50px 50px;gap:.6rem}
+  .hero .cta .btn-red{grid-column:1/-1;padding:1rem}
+  .hero .cta .btn-ghost:not(.btn-ic){padding:.85rem .6rem;font-size:.95rem}
+  .chips{margin-top:1.6rem}
+  nav .nav-ic{width:44px;height:44px}
+  footer{padding-bottom:120px}
+  .mbar{display:flex;position:fixed;inset:auto 0 0 0;z-index:55;background:var(--paper);padding:.6rem .8rem calc(.6rem + env(safe-area-inset-bottom));gap:.6rem;box-shadow:0 -6px 20px rgba(0,0,0,.12)}
   .mbar .btn{flex:1;padding:.75rem .5rem;font-size:.98rem}
 }
 </style>
