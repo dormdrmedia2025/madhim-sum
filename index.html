@@ -177,7 +177,7 @@ footer small{font-size:.9rem}
   .gal{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
   .about .pic{max-width:420px;margin-inline:auto}
   .hero::before{background:linear-gradient(180deg,rgba(14,10,8,.55),rgba(14,10,8,.88))}
-  .hero{align-items:flex-end}
+  .hero{align-items:flex-start}
 }
 @media (max-width:560px){
   body{font-size:16px}
@@ -186,7 +186,8 @@ footer small{font-size:.9rem}
   nav .hide-m{display:none}
   .fab,.scroll-hint{display:none}
   nav .btn-red{display:none}
-  .hero .wrap{padding:92px 0 112px}
+  .hero{min-height:0}
+  .hero .wrap{padding:84px 0 56px}
   .hero .cta{display:grid;grid-template-columns:1fr 1fr;gap:.55rem}
   .hero .cta .btn{padding:.7rem .4rem;font-size:.9rem;gap:.35rem}
   .hero .cta .btn svg{width:18px;height:18px}
