@@ -58,8 +58,8 @@ nav.solid .btn-ghost{color:var(--ink);border-color:var(--ink);background:transpa
 .eyebrow::before{content:"";width:34px;height:3px;background:var(--red);border-radius:2px}
 .hero h1{font-size:clamp(2.5rem,6.4vw,5rem);line-height:1.12;font-weight:900;letter-spacing:-.025em}
 .hero h1 span{display:block}
-.hero h1 .l2{position:relative;width:fit-content}
-.hero h1 .h-stamp{position:absolute;display:block;height:.9em;left:-.28em;bottom:-.5em;margin:0;vertical-align:baseline}
+.hero h1 .l2{white-space:nowrap}
+.hero h1 .h-stamp{display:inline-block;height:.85em;margin-inline-start:.25em;vertical-align:middle}
 .h-stamp{display:inline-block;height:.95em;aspect-ratio:2/1;background:var(--stamp) center/contain no-repeat;vertical-align:middle;margin-inline-start:.3em;transform:rotate(-8deg);filter:drop-shadow(0 3px 10px rgba(0,0,0,.45))}
 .hero p.lead{font-size:clamp(1.05rem,2vw,1.3rem);max-width:40ch;margin:1.4rem 0 2rem;color:rgba(255,255,255,.9)}
 .hero .cta{display:flex;flex-wrap:wrap;gap:.8rem}
@@ -193,9 +193,8 @@ footer small{font-size:.9rem}
   nav .hide-m{display:none}
   .fab,.scroll-hint{display:none}
   nav .btn-red{display:none}
-  .hero{min-height:100vh;min-height:100svh;align-items:center}
-  .hero .wrap{padding:96px 0 108px}
-  .hero p.lead{margin-top:2rem}
+  .hero{min-height:100vh;min-height:100svh;align-items:flex-start}
+  .hero .wrap{padding:146px 0 90px;padding-top:18svh}
   .hero .cta{display:grid;grid-template-columns:1fr 1fr;gap:.55rem}
   .hero .cta .btn{padding:.7rem .4rem;font-size:.9rem;gap:.35rem}
   .hero .cta .btn svg{width:18px;height:18px}
